@@ -1,10 +1,10 @@
 import QtQuick 2.7
-import QtMultimedia 5.6
+import QtAV  1.7
 import QtQuick.Controls 2.0
 import QtQuick.Dialogs 1.2
 
 
-VideoOutput {
+VideoOutput2 {
 
     id: videoOutput
     source: player
@@ -65,7 +65,7 @@ VideoOutput {
         onAccepted:   player.source = fileDialog.fileUrl
     }
 
-    MediaPlayer {
+    AVPlayer {
         id: player
         source: "rtmp://streaming.airmax.pl/kedzierzynkozleplwolnosci"
         autoPlay: true

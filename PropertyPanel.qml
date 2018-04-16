@@ -105,6 +105,7 @@ Rectangle
                 ListElement { name: "Invert";        source:"Effects/EffectInvert.qml" }
                 ListElement { name: "Mixer";         source:"Effects/EffectMix.qml" }
                 ListElement { name: "Camera";        source:"Video/Camera.qml" }
+                ListElement { name: "VideoQtAV";     source:"Video/VideoAV.qml" }
             }
 
             onActivated: {
